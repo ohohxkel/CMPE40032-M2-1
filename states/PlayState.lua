@@ -132,11 +132,13 @@ function PlayState:render()
     love.graphics.setFont(flappyFont)
     love.graphics.print('Score: ' .. tostring(self.score), 8, 8)
 
-   --[[ love.graphics.setFont(smallFont)
+    --[[ GEEK STATS// Just remove comment sig. if needed
+    love.graphics.setFont(smallFont)
     love.graphics.print('FOR PROGRAMMING PURPOSES', 8, 246)
     love.graphics.print('Timer: ' .. tostring(TIMER_RANDOM), 8, 254)
     love.graphics.print('Height: ' .. tostring(GAP_HEIGHT), 8, 262)
     ]]--
+
     self.bird:render()
 end
 
