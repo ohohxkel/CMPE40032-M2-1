@@ -47,9 +47,7 @@ function Bird:update(dt)
         sounds['jump']:play()
     end
 
-    self.y = self.y + self.dy
-
-
+   
     function love.mousepressed(mouse_x,mouse_y,button)
         if button == 1 then 
             self.dy = -5 
@@ -59,6 +57,9 @@ function Bird:update(dt)
 
     self.y = self.y + self.dy
 end
+
+
+
 
 function Bird:render()
     love.graphics.draw(self.image, self.x, self.y)
